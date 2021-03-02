@@ -85,7 +85,7 @@ cat clarusway.txt
 echo "this is file1" > file1
 echo "this is file2" > file2
 echo "this is file3" > file3
-bash
+```
 
 - Display the file1, file2 and file3 files on the screen.
 
@@ -187,7 +187,7 @@ find /home -type f -empty
 find /home -size 100M
 ```
 
-- Find all the files which are greater than 50MB and less than 100MB under home directory. Note that The `+` and `-` prefixes signify greater than and less than.
+- Find all the files which are greater than 50MB and less than 100MB under home directory. Note that the `+` and `-` prefixes signify greater than and less than.
 
 ```bash
 find /home -size +50M -size -100M
@@ -257,7 +257,7 @@ grep  "is" *
 grep "linux" linux.txt
 ```
 
-- It didn't find linux word. Because grep is case sensitive. Now try with the following command.
+- It didn't find linux expression. Because grep is case sensitive. Now try with the following command.
 
 ```bash
 grep -i "linux" linux.txt

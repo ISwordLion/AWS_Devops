@@ -46,7 +46,7 @@ read -p "Input a number: " number
 
 if [[ $number -gt 50 ]]
 then
-  echo "The number is big."
+  echo "The number is greater than 50."
 fi
 ```
 
@@ -57,7 +57,9 @@ chmod +x if-statement.sh
 ./if-statement.sh
 ```
 
-- We can use `Relational Operators`, `String Operators` or `File Test Operators` inside the square brackets ( [ ] ) in the if statement above. 
+> Notice that there are spaces between the opening brackets `[[` and the parameters, and then between the parameters and the closing brackets `]]`. That is precisely because the brackets here act as a command, and we are separating the command from its parameters.
+
+- We can use `Relational Operators`, `String Operators` or `File Test Operators` inside the square brackets (`[[ ]]`) in the if statement above. 
 
 ### Relational Operators
 
@@ -109,7 +111,7 @@ then
 fi
 ```
 
-- Notice that there are spaces between the opening bracket `[` and the parameters "text" = "text", and then between the parameters and the closing bracket `]`. That is precisely because the brackets here act as a command, and you are separating the command from its parameters.
+- Notice that there are spaces between the opening bracket `[[` and the parameters "text" = "text", and then between the parameters and the closing bracket `]]`. That is precisely because the brackets here act as a command, and we are separating the command from its parameters.
 
 - Make the script executable and execute it.
 

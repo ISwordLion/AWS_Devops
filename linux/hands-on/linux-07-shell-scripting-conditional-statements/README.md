@@ -44,7 +44,7 @@ mkdir conditional-statements && cd conditional-statements
 #!/bin/bash
 read -p "Input a number: " number
 
-if [ $number -gt 50 ]
+if [[ $number -gt 50 ]]
 then
   echo "The number is big."
 fi
@@ -88,22 +88,22 @@ chmod +x if-statement.sh
 ```bash
 #!/bin/bash
 
-if [ "a" = "a" ]
+if [[ "a" = "a" ]]
 then
   echo "They are same"
 fi
 
-if [ "a" != "b" ]
+if [[ "a" != "b" ]]
 then
   echo "They are not same"
 fi
 
-if [ -z "" ]
+if [[ -z "" ]]
 then
   echo "It is empty"
 fi
 
-if [ -n "text" ]
+if [[ -n "text" ]]
 then
   echo "It is not empty"
 fi
@@ -145,32 +145,32 @@ Create a file and name it `file-operators.sh`
 ```bash
 #!/bin/bash
 
-if [ -d folder ]
+if [[ -d folder ]]
 then
   echo "folder is a directory"
 fi
 
-if [ -f file ]
+if [[ -f file ]]
 then
   echo "file is an ordinary file"
 fi
 
-if [ -r file ]
+if [[ -r file ]]
 then
   echo "file is a readable file"
 fi
 
-if [ -w file ]
+if [[ -w file ]]
 then
   echo "file is a writable file"
 fi
 
-if [ -s file ]
+if [[ -s file ]]
 then
   echo "file is > 0 bytes"
 fi
 
-if [ -x $0 ]
+if [[ -x $0 ]]
 then
   echo "$0 is an executable file "
 fi
@@ -193,7 +193,7 @@ chmod +x file-operators.sh
 #!/bin/bash
 read -p "Input a number: " number
 
-if [ $number -ge 10 ]
+if [[ $number -ge 10 ]]
 then
   echo "The number is bigger than or equal to 10."
 else 
@@ -222,10 +222,10 @@ chmod +x ifelse-statement.sh
 #!/bin/bash
 read -p "Input a number: " number
 
-if [ $number -eq 10 ]
+if [[ $number -eq 10 ]]
 then
   echo "The number is equal to 10."
-elif [ $number -gt 10 ]
+elif [[ $number -gt 10 ]]
 then
   echo "The number is bigger than 10"
 else 
@@ -251,7 +251,7 @@ chmod +x elif-statement.sh
 
 read -p "Input a number: " number
 
-if [ $number -gt 10 ]
+if [[ $number -gt 10 ]]
 then
   echo "Number is bigger than 10"
 
@@ -297,7 +297,7 @@ chmod +x nested-if-statement.sh
 read -p "Input your name: " name
 read -sp "Input your password: " password
 
-if [ $name = $(whoami) ] && [ $password = Aa1234 ]
+if [[ $name = $(whoami) ]] && [[ $password = Aa1234 ]]
 then
   echo -e "\nWelcome $(whoami)"
 else

@@ -283,7 +283,8 @@ chmod +x nested-if-statement.sh
 | -------- | ----------- |
 | !        | negation    |
 | &&       | and         |
-| ||       | or          |
+| \|\|     | or          |
+
 
 - `!`  inverts a true condition into false and vice versa.
 

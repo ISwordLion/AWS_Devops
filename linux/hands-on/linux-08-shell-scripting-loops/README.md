@@ -32,7 +32,7 @@ At the end of the this hands-on training, students will be able to;
 
 ## Part 1 - While loops
 
-- When writing programs in shell, in some cases it is not enough to execute our block of code only once. The loops are used to repeat (iterate) the execution of a block of code.
+- When writing programs in shell, in some cases it is not enough to execute the block of code only once. The loops are used to repeat (iterate) the execution of a block of code.
 
 - while loops have a boolean logic, similar to if statements. As long as the result of the condition returns True, the code block under while loop runs. When the condition returns to False, the loop execution is terminated and the program control moves further to the next operation.
 
@@ -117,7 +117,7 @@ done
 
 echo "Files in current folder:"
 
-for file in `pwd`/*
+for file in $(ls)
 do
    echo $file
 done
@@ -139,9 +139,9 @@ chmod +x for-loop.sh
 ```bash
 #!/bin/bash
 
-number=1
+number=10
 
-until [[ $number -ge 10  ]]
+while [[ $number -gt 1  ]]
 do
   echo $number
   ((number++))
@@ -167,9 +167,9 @@ chmod +x infinite-loop.sh
 ```bash
 #!/bin/bash
 
-number=1
+number=10
 
-until [[ $number -lt 1  ]]
+while [[ $number -gt 1  ]]
 do
   echo $number
   ((number++))

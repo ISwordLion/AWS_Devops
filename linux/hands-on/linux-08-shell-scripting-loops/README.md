@@ -99,7 +99,7 @@ chmod +x until-loop.sh
 - Here is a simple example. Create a `script` file named `for-loop.sh`. 
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 echo "Numbers:"
 

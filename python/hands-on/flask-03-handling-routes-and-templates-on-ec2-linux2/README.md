@@ -68,7 +68,7 @@ The server responds to that request with an HTTP response message. Within the re
 
 - Create python file named `app.py` within `flask-03-handling-routes-and-templates-on-ec2-linux2` folder
 
-- Write an application with routing and templating samples and save the complete code under `hands-on/flask-02-handling-routes-and-templates-on-ec2-linux2` folder.
+- Write an application with routing and templating samples and save the complete code under `hands-on/flask-03-handling-routes-and-templates-on-ec2-linux2` folder.
 
 ```python
 #Import Flask modules
@@ -114,7 +114,7 @@ The server responds to that request with an HTTP response message. Within the re
 
 - Write a template html file named `evens.html` which shows a list of even numbers from 1 to 10 under `templates` folder 
 
-- Create a folder named `static` under `hands-on/flask-02-handling-routes-and-templates-on-ec2-linux2` folder and create a text file named `mytext.txt` with *This is a text file in static folder* content.
+- Create a folder named `static` under `hands-on/flask-03-handling-routes-and-templates-on-ec2-linux2` folder and create a text file named `mytext.txt` with *This is a text file in static folder* content.
 
 - Add and commit all changes on local repo
 

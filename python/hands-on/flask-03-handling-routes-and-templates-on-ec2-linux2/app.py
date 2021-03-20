@@ -36,21 +36,21 @@ def admin():
 
 # Create a function named greet which return formatted inline html string 
 # and assign to the dynamic route of ('/<name>')
-# @app.route('/<name>')
-# def greet(name):
-#     greet_format=f"""
-# <!DOCTYPE html>
-# <html>
-# <head>
-#     <title>Greeting Page</title>
-# </head>
-# <body>
-#     <h1>Hello, { name }!</h1>
-#     <h1>Welcome to my Greeting Page</h1>
-# </body>
-# </html>
-#     """
-#     return greet_format
+@app.route('/<name>')
+def greet(name):
+    greet_format=f"""
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting Page</title>
+</head>
+<body>
+    <h1>Hello, { name }!</h1>
+    <h1>Welcome to my Greeting Page</h1>
+</body>
+</html>
+    """
+    return greet_format
 
 # Create a function named greet_admin which redirect the request to the greet-admin path with param of 'Master Admin!!!!' 
 # and assign to the route of ('/greet-admin')
@@ -81,4 +81,5 @@ def evens():
 
 # Add a statement to run the Flask application which can be reached from any host on port 80.
 if __name__=='__main__':
-    app.run(host=0.0.0.0, port=80)
+    app.run(debug=True)
+    #app.run(host=0.0.0.0, port=80)

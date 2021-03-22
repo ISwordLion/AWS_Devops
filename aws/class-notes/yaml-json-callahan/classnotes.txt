@@ -29,6 +29,14 @@ VS Code Extensions for YAML and Cloudformation:
   Red Hat
   
   
+ 
+ Online YAML-to-JSON/JSON-to-YAML Converters:
+ 
+  - https://codebeautify.org/json-to-yaml
+  - https://codebeautify.org/yaml-to-json-xml-csv
+  - https://jsonformatter.org/json-to-yaml
+  - https://jsonformatter.org/yaml-to-json
+  
   References:
   - https://yaml.org/
   - https://json.org/

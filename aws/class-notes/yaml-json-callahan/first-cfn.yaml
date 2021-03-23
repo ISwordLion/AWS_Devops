@@ -1,16 +1,16 @@
 AWSTemplateFormatVersion: 2010-09-09
 
-Description: This template creates an EC2 instance which enables SSH connection. 
+Description: This template creates an EC2 instance ready for SSH connection. 
 
 Resources:
-  GuileCFInstance:
+  CFNInstance:
     Type: AWS::EC2::Instance
     Properties:
-      ImageId: ami-02354e95b39ca8dec
+      ImageId: ami-0533f2ba8a1995cf9
       InstanceType: t2.micro
-      KeyName: guile-cfdemo-kp
+      KeyName: guile
       SecurityGroups:
-        - guile-cfdemo-sg
+        - cfn-sec-group
       Tags:
         - Key: Name
-          Value: guile-cf-instance
+          Value: cfn-instance

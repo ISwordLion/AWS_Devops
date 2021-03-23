@@ -8,7 +8,7 @@ Resources:
     Properties:
       ImageId: ami-0533f2ba8a1995cf9
       InstanceType: t2.micro
-      KeyName: guile
+      KeyName: guile # please put your own key name
       SecurityGroups:
         - cfn-sec-group
       Tags:

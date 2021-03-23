@@ -1,49 +1,57 @@
 # First yaml comment
 # Second comment
+---
+key: value
+instructor: guile
+---
+
 # List of strings
-- Apple
-- Orange
-- Mango
+- guile
+- osvaldo
+- james
 
-
+---
 # An employee record
-martin: 
-  name: Martin Snow
-  job: Developer
-  skill: Senior
-  age: 35
 
+instructor: 
+  name: guile
+  job: solutions-arct
+  department: aws
+  age: 37
+
+---
 # Employee list
-- martin: 
-    name: Martin Snow
-    job: Developer
-    skill: 
-      - pyhon
-      - javascript
-    age: 35
-- john: 
-    name: John Snow
-    job: Developer
-    skill:
-      - javascript
-      - html
-      - css
-    age: 45
-# Another object format
-martin: {name: Martin Snow, job: Developer, skill: ['python', 'javascript'], age: 35}
 
+-  instructor1: 
+      name: guile
+      job: solutions-arct
+      department: aws
+      age: 37
+
+-  instructor2: 
+      name: james
+      job: devops-eng
+      department: devops
+      age: 37
+---
+# Another object format
+
+instructor:
+  {name: callahan, job: devops-eng, department: [aws, devops], age: 39}
+
+...
 
 #Multiple lines values
 
-name: Martin Snow
-job: Developer
-skill:
-  - javascript
-  - html
-  - typescript
-education: | 
-  BSc Computer Science
-  MSc Business Administration
-eduvcation: >
-  BSc Computer Science
-  MSc Business Administration
+example1: |  # Keeps the block
+  Guile G.
+  Solutions Architect
+  Clarusway LLC.
+
+example2: > # This text will be a sentence
+  This
+  text
+  will
+  be
+  a
+  sentence

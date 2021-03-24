@@ -9,6 +9,10 @@ Session - 1
 Session starts at 7pm EST
 
 
+Break until 8pm EST
+
+Break until 9pm EST
+
 
 VS Code Extensions for YAML and Cloudformation:
 

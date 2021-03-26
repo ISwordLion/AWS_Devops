@@ -87,9 +87,9 @@ When sending request, the client can send data with using different http methods
 
 
 
-# Write a function named `login` which uses `GET` and `POST` methods, 
-# and template files named `login.html` and `secure.html` given under `templates` folder 
-# and assign to the static route of ('login')
+# Write a function named `login` which uses `GET` and `POST` methods,
+# and template files named `login.html` and `secure.html` given under `templates` folder
+# and assign to the static route of ('login'). It controls If password is clarusway or not
 
 
 # Add a statement to run the Flask application which can be reached from any host on port 80.

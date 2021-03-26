@@ -17,6 +17,10 @@
             <input type="password" name="password" id="pswdid">
         </p>
         <p><input type="submit" value="Login"></p>
+
+        {% if control %}
+        <h2>Hi {{ user }}, Welcome to login page! your password is wrong, please try again </h2>
+        {% endif %}
     </form>
 </body>
 
